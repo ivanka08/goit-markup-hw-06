@@ -534,26 +534,20 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .examples-cover-text:hover {
-    transform: translateY(0%);
-}
-
-.examples-cover-text:focus {
-    transform: translateY(0%);
-} */
-
 
 /* =================================== FOOTER =========================================*/
 
 .footer-container {
     display: flex;
+    min-width: 320px;
+    flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
     
 }
 
 .logo-container {
-    margin-right: 120px;
+    margin-bottom: 72px;
 }
 
 .footer {
@@ -563,8 +557,10 @@ img {
 }
 
 .footer .logo {
-    display: inline-block;
+    display: block;
+    text-align: center;
     margin-bottom: 16px;
+    margin-right: 0;
     padding: 0;
 }
 
@@ -586,11 +582,13 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .footer-networks {
     display: flex;
     gap: 16px;
+    margin-bottom: 72px;
 }
 
 .footer-link {
@@ -613,8 +611,9 @@ img {
 }
 
 .footer-form {
-    margin-left: 80px;
+    /* margin-left: 80px; */
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 24px;
@@ -622,16 +621,17 @@ img {
 
 .footer-text {
     display: block;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     margin-bottom: 16px;
     color: #FFFFFF;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
+    text-align: center;
 }
 
 .footer-input {
-    width: 264px;
+    width: 290px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid var(--white, #FFF);
@@ -639,6 +639,7 @@ img {
     background-color: transparent;
     padding-left: 16px;
     position: relative;
+    opacity: 0.30000001192092896;
 
     font-size: 12px;
     line-height: 1.5;
@@ -657,6 +658,7 @@ img {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    opacity: 0.6000000238418579;
 }
 
 .footer-btn {
@@ -908,6 +910,14 @@ img {
     .container {
         max-width: 428px;
     }
+
+    .footer-container {
+        max-width: 428px;
+    }
+
+        .footer-input {
+            width: 398px;
+        }
 }
 
 
@@ -943,6 +953,28 @@ img {
 .customers-link {
     width: 168px;
 }
+
+.footer-container {
+    max-width: 768px;
+}
+
+.footer .logo {
+    text-align: left;
+    
+}
+
+.footer-descr {
+    margin-right: 24px;
+}
+
+.social {
+    text-align: left;
+}
+
+.footer-input {
+    width: 264px;
+}
+
     }
 
 @media screen and (min-width:1158px) {
@@ -973,6 +1005,10 @@ img {
 
 .our-team-item {
     width: calc((100% - 72px) / 4); 
+}
+
+.footer-container {
+    max-width: 1158px;
 }
 
 }
